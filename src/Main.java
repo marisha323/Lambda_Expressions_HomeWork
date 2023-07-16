@@ -54,5 +54,19 @@ public class Main {
 //        System.out.println("Мінімум із чотирьох чисел та трьох: " + minWithThree);
 
     ////Task4
+        int[] array={1,4,5,7,3,9,12,-9};
+
+        int sumEqualsToFive=ArraySumCalculator.sumElem(array,s->s==7);
+        System.out.println("Сума елементів масиву, що рівні 5: " + sumEqualsToFive);
+
+        int sum2=ArraySumCalculator.sumElem(array,s->s<-3||s>8);
+        System.out.println("Сума елементів масиву, що не знаходяться в діапазоні від -3 до 8: " + sum2);
+
+        int sum3=ArraySumCalculator.sumElem(array,s->s>0);
+        System.out.println("Сума додатних чисел у масиві: " + sum3);
+
+        int sum4=ArraySumCalculator.sumElem(array,s->s<0);
+        System.out.println("Сума від'ємних чисел у масиві: " + sum4);
+
     }
 }
